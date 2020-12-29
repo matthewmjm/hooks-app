@@ -13,3 +13,8 @@ export const useCounter = (initialCount) => {
 
     return [count, increment, decrement]
 }
+
+export const useToggler = (initialState) => {
+    const [isToggled, setIsToggled] = useState(initialState)
+    return [isToggled, setIsToggled]
+}
